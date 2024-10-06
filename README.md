@@ -1,2 +1,3 @@
 # Areeb
  
+An app that for once centers artists and their art, giving them a space where they can showcase their art and collaborate with other artists of any kind! painters collaborating with potters, singers connected with writers and so much more. its about time to nourish everything the Saudi Artists are willing to give. As well as giving them an opportunity to share their knowledge with other upcoming artists, with the help of already exiting local art hubs and centers giving them the space and time to host said workshops or hosting art galleries of all the art that came out thanks to the app!
