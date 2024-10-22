@@ -2,7 +2,11 @@ import 'package:flutter/material.dart';
 // import 'EditProfile.dart';
 // import 'Profile.dart';
 import 'home.dart';
-// import 'Post.dart';
+import 'post.dart';
+import 'entry.dart';
+import 'Artist.dart';
+import 'login.dart';
+
 
 void main() {
   runApp(const MyApp());
