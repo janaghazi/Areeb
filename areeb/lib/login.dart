@@ -102,8 +102,7 @@ class _LoginPageState extends State<LoginPage> {
                         user.password == passwordController.text) {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(
-                            builder: (context) => const MainApp()),
+                        MaterialPageRoute(builder: (context) => MainApp()),
                       );
                       // او اي شي ابغاه يسويه ، زي .. يودينا الهوم او شي
                     } else {

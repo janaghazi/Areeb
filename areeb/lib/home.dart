@@ -1,12 +1,15 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-
-// homepage , jana ghazi
+import 'package:areeb/widgets/SubCategoryCard.dart';
 import 'package:flutter/material.dart';
-import 'Sub_Category_Card.dart';
+
 
 class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+  MainApp({super.key});
+  final TextStyle heading = TextStyle(
+      fontSize: 25, fontStyle: FontStyle.italic, fontWeight: FontWeight.bold);
+  final TextStyle subheading = TextStyle(
+      fontSize: 25, fontStyle: FontStyle.italic, fontWeight: FontWeight.bold);
 
   @override
   Widget build(BuildContext context) {
@@ -14,32 +17,27 @@ class MainApp extends StatelessWidget {
       // darkTheme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Color.fromRGBO(251, 246, 242, 10),
         appBar: AppBar(
+          backgroundColor: Color.fromRGBO(251, 246, 242, 10),
           title: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                // Text("أريب"),
                 Image.asset(
                   "assets/areeb.png",
                   fit: BoxFit.contain,
                   height: 50,
                 ),
-                // Image.asset(
-                //   'assets/software-engineer.png',
-                //   // fit: BoxFit.contain,
-                //   height: 50,
-                // ),
                 Container(
                   padding: EdgeInsets.all(0.5), // Border width
-                  decoration:
-                      BoxDecoration(color: Colors.black, shape: BoxShape.circle),
+                  decoration: BoxDecoration(
+                      color: Colors.black, shape: BoxShape.circle),
                   child: ClipOval(
                     child: SizedBox.fromSize(
                       size: Size.fromRadius(25), // Image radius
-                      child: Image.asset('assets/wallahi_nice.jpg',
-                          fit: BoxFit.cover),
+                      child: Image.asset('assets/pfp.jpeg', fit: BoxFit.cover),
                     ),
                   ),
                 )
@@ -60,36 +58,41 @@ class MainApp extends StatelessWidget {
                   height: 15,
                 ),
                 Text(
-                  "EXPLORE ART!",
-                  style: TextStyle(
-                      fontSize: 25,
-                      fontStyle: FontStyle.italic,
-                      fontWeight: FontWeight.bold),
-                ),
-                Text(
                   "Visual Arts",
-                  style: TextStyle(
-                      fontSize: 25,
-                      fontStyle: FontStyle.italic,
-                      fontWeight: FontWeight.bold),
+                  style: heading,
                 ),
-                Sub_Category_Card(),
+                SubCategoryCard(
+                  firstTitle: "PAINTERS",
+                  firstimagePath: 'assets/painters.jpeg',
+                  secondTitle: "GRAPHIC DESIGNERS",
+                  secondImagePath: 'assets/graphicDesign.jpeg',
+                  thirdTitle: "PHOTOGRAPAHER",
+                  thirdImagePath: "assets/photography.jpeg",
+                ),
                 Text(
-                  "Preforming Arts",
-                  style: TextStyle(
-                      fontSize: 25,
-                      fontStyle: FontStyle.italic,
-                      fontWeight: FontWeight.bold),
+                  "Performing Arts",
+                  style: heading,
                 ),
-                Sub_Category_Card(),
+                SubCategoryCard(
+                  firstTitle: "Singers",
+                  firstimagePath: 'assets/Singers.jpeg',
+                  secondTitle: "Dancers",
+                  secondImagePath: 'assets/Dancers.jpeg',
+                  thirdTitle: "Musicians",
+                  thirdImagePath: "assets/Musicians.jpeg",
+                ),
                 Text(
-                  "Literary Arts",
-                  style: TextStyle(
-                      fontSize: 25,
-                      fontStyle: FontStyle.italic,
-                      fontWeight: FontWeight.bold),
+                  "Crafts Arts",
+                  style: heading,
                 ),
-                Sub_Category_Card(),
+                SubCategoryCard(
+                  firstTitle: "Ceramicists",
+                  firstimagePath: 'assets/Ceramics.jpg',
+                  secondTitle: "Jewelry Designers",
+                  secondImagePath: 'assets/JewelryDesign.jpg',
+                  thirdTitle: "Wood Carving",
+                  thirdImagePath: "assets/WoodCarving.jpg",
+                ),
               ],
             ),
           ),

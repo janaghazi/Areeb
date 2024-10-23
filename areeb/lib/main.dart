@@ -34,7 +34,6 @@ class _MyAppState extends State<MyApp> {
         '/entry' : (context) => Entry(), 
         '/home': (context) => MainApp(),
         '/login': (context) => LoginPage(),
-        "/Post": (context) => const PostScreen(),
       },
       debugShowCheckedModeBanner: false,
       home: Scaffold(
