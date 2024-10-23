@@ -71,11 +71,11 @@ class _LoginPageState extends State<LoginPage> {
                     fillColor: Colors.grey[200],
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), // Border color updated
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), 
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), // Border color updated
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), 
                     ),
                     
                   ),
@@ -93,11 +93,11 @@ class _LoginPageState extends State<LoginPage> {
                     fillColor: Colors.grey[200],
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), // Border color updated
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), 
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), // Border color updated
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), 
                     ),
                     suffixIcon: IconButton(
                         onPressed: () {
@@ -198,11 +198,11 @@ class _SignupPageState extends State<SignupPage> {
                     fillColor: Colors.grey[200],
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), // Border color updated
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), 
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), // Border color updated
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), 
                     ),
                   ),
                 ),
@@ -217,11 +217,11 @@ class _SignupPageState extends State<SignupPage> {
                     fillColor: Colors.grey[200],
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), // Border color updated
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), 
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), // Border color updated
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), 
                     ),
                   ),
                 ),
@@ -237,11 +237,11 @@ class _SignupPageState extends State<SignupPage> {
                     fillColor: Colors.grey[200],
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), // Border color updated
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2),
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), // Border color updated
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), 
                     ),
                     suffixIcon: IconButton(
                         onPressed: () {
