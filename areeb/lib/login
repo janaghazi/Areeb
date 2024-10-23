@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Postt.dart';
 import "artist.dart";
+void main() {
+  runApp(const MyApp());
+}
 
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-// class MyApp extends StatelessWidget {
-//   const MyApp({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return const MaterialApp(
-//       debugShowCheckedModeBanner: false,
-//       home: LoginPage(),
-//     );
-//   }
-// }
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: LoginPage(),
+    );
+  }
+}
 bool isSecure = true;
 
 Map<String, Artist> users = {
@@ -40,7 +41,7 @@ class _LoginPageState extends State<LoginPage> {
         child: Container(
           padding: const EdgeInsets.all(20),
           decoration: const BoxDecoration(
-            color: Color(0xFFFBF6F2), 
+            color: Color(0xFFFBF6F2), // Background color changed to #fbf6f2
           ),
           child: Center(
             child: Column(
@@ -59,21 +60,24 @@ class _LoginPageState extends State<LoginPage> {
 
                 const SizedBox(height: 30),
 
+               
+
                 TextField(
                   controller: usernameController,
                   decoration: InputDecoration(
                     labelText: "Username",
                     labelStyle: const TextStyle(color: Color(0xFF373737)),
                     filled: true,
-                    fillColor:Colors.grey[200],
+                    fillColor: Colors.grey[200],
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), 
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), // Border color updated
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), 
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), // Border color updated
                     ),
+                    
                   ),
                 ),
 
@@ -81,36 +85,32 @@ class _LoginPageState extends State<LoginPage> {
 
                 TextField(
                   controller: passwordController,
-                  obscureText: true,
+                  obscureText: isSecure,
                   decoration: InputDecoration(
                     labelText: "Password",
                     labelStyle: const TextStyle(color: Color(0xFF373737)),
                     filled: true,
-                    fillColor:Colors.grey[200],
+                    fillColor: Colors.grey[200],
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), 
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), // Border color updated
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), 
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), // Border color updated
                     ),
+                    suffixIcon: IconButton(
+                        onPressed: () {
+                          setState(() {
+                            isSecure = !isSecure;
+                          });
+                        },
+                        icon: const Icon(Icons.remove_red_eye),
+                      ),
                   ),
                 ),
-
+             
                 const SizedBox(height: 30),
-                InkWell(
-                    onTap: () {
-                      Artist user = users[usernameController.text]!;
-                      if (user.username == usernameController.text &&
-                          user.password == passwordController.text) {
-                        Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => const PostScreen()), 
-                      );
-                      } 
-                    }, 
-                    ),
 
                 ElevatedButton(
                   onPressed: () {},
@@ -172,7 +172,7 @@ class _SignupPageState extends State<SignupPage> {
         child: Container(
           padding: const EdgeInsets.all(20),
           decoration: const BoxDecoration(
-            color: Color(0xFFFBF6F2), // #fbf6f2
+            color: Color(0xFFFBF6F2), // Background color changed to #fbf6f2
           ),
           child: Center(
             child: Column(
@@ -197,19 +197,19 @@ class _SignupPageState extends State<SignupPage> {
                     filled: true,
                     fillColor: Colors.grey[200],
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(30), 
-                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), 
+                      borderRadius: BorderRadius.circular(30),
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), // Border color updated
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), 
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), // Border color updated
                     ),
                   ),
                 ),
 
                 const SizedBox(height: 20),
 
-              TextField(
+                TextField(
                   controller: usernameController,
                   decoration: InputDecoration(
                     labelText: "Username",
@@ -217,11 +217,11 @@ class _SignupPageState extends State<SignupPage> {
                     fillColor: Colors.grey[200],
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), 
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), // Border color updated
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), 
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), // Border color updated
                     ),
                   ),
                 ),
@@ -230,29 +230,34 @@ class _SignupPageState extends State<SignupPage> {
 
                 TextField(
                   controller: passwordController,
-                  obscureText: true,
+                  obscureText: isSecure,
                   decoration: InputDecoration(
                     labelText: "Password",
                     filled: true,
                     fillColor: Colors.grey[200],
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), 
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), // Border color updated
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), 
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 141, 180, 121), width: 2), // Border color updated
                     ),
+                    suffixIcon: IconButton(
+                        onPressed: () {
+                          setState(() {
+                            isSecure = !isSecure;
+                          });
+                        },
+                        icon: const Icon(Icons.remove_red_eye),
+                      ),
                   ),
                 ),
 
                 const SizedBox(height: 30),
 
                 ElevatedButton(
-                  onPressed: () {
-                // navigate to post 
-                Navigator.pushNamed(context, '/post');
-              },
+                  onPressed: () {},
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color.fromARGB(255, 141, 180, 121),
                     shape: RoundedRectangleBorder(
