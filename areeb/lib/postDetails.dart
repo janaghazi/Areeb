@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 
 class PostScreen extends StatelessWidget {
-  const PostScreen({super.key});
+  const PostScreen({super.key, });
 
   @override
   Widget build(BuildContext context) {
@@ -73,13 +73,6 @@ class PostScreen extends StatelessWidget {
                   child: Icon(Icons.thumb_up, color: Colors.white),
                 ),
                 
-                // ElevatedButton(
-                //   onPressed: () {},
-                //   style: ElevatedButton.styleFrom(
-                //     padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-                //   ),
-                //   child:const Icon(Icons.thumb_up, color: Colors.white),
-                // ),
                 
                 ElevatedButton(
                   onPressed: () {},

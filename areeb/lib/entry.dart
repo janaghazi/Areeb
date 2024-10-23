@@ -37,11 +37,11 @@ class _EntryState extends State<Entry> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Color(0xFFFBF6F2), // Set the background to black
+      backgroundColor: Color(0xFFFBF6F2), 
       body: Center(
 
         child: Image(
-          image: AssetImage("lib/AreebLogo.png")
+          image: AssetImage("assets/areeb.png")
           ),
         
 

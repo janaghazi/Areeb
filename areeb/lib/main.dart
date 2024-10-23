@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-// import 'EditProfile.dart';
-// import 'Profile.dart';
 import 'home.dart';
-import 'post.dart';
+import 'postDetails.dart';
 import 'entry.dart';
-import 'Artist.dart';
+import 'classes/Artist.dart';
 import 'login.dart';
 
 
@@ -31,20 +29,14 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // '/': (context) => const Entry(),  
-      //   '/login': (context) => const LoginPage(), 
-
-      
-      // initialRoute: '/home',
-      // routes: {
-      //   '/home': (context) => MainApp(),
-      //   "/Profile": (context) => ProfilePage(),
-      //   "/EditProfile": (context) => EditProfilePage(),
-      //   "/Post": (context) => const PostScreen(),
-      //   //"/subcategory": (context) => const subCategory(),
-      // },
+      initialRoute: '/entry',
+      routes: {
+        '/entry' : (context) => Entry(), 
+        '/home': (context) => MainApp(),
+        '/login': (context) => LoginPage(),
+        "/Post": (context) => const PostScreen(),
+      },
       debugShowCheckedModeBanner: false,
-      // home: const MainApp(),
       home: Scaffold(
         body: Center(
           child: screenList[myIndex],
