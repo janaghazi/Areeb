@@ -36,7 +36,7 @@ class _EditProfileState extends State<EditProfile> {
           Padding(
             padding: EdgeInsets.all(8.0),
             child: Image.asset(
-              'assets/AreebLogo.png',
+              'assets/areeb.png',
               height: 50.0,
             ),
           ),
