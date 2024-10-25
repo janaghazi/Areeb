@@ -1,4 +1,3 @@
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'classes/list.dart';
@@ -43,13 +42,13 @@ class SubCategoryPage extends StatelessWidget {
           FeedPost(
               artist: artist1,
               username: artist1.username,
-              imagePath: "assets/${pagetitle}post$n.jpg",
+              imagePath: "assets/${pagetitle}post$n.jpeg",
               pfpPath: artist1.imagePath,
               post: listOfPaintersPosts[postKey1]!),
           FeedPost(
             artist: artist2,
             username: artist2.username,
-            imagePath: "assets/${pagetitle}post$j.jpg",
+            imagePath: "assets/${pagetitle}post$j.jpeg",
             pfpPath: artist2.imagePath,
             post: listOfPaintersPosts[postKey2]!,
           )
