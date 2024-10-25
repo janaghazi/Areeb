@@ -46,8 +46,8 @@ class PostScreen extends StatelessWidget {
                 const SizedBox(height: 20),
                 Center(
                   child: Container(
-                    width: 200,
-                    height: 300,
+                    // width: 200,
+                    // height: 300,
                     color: Colors.grey[300],
                     child: Image.asset(post.imagePath),
                     

@@ -1,10 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'classes/list.dart';
 import 'classes/post.dart';
 import 'widgets/feedPost.dart';
-
-
 
 class SubCategoryPage extends StatelessWidget {
   SubCategoryPage({super.key, required this.pagetitle});
@@ -13,15 +10,24 @@ class SubCategoryPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Map<String, Post> listOfPaintersPosts = {
-      'post1': post1,
-      'post2': post2,
-      'post3': post3,
-      'post4': post4,
-      'post5': post5,
-      'post6': post6,
-      'post7': post7,
-      'post8': post8,
+    Map<String, Post> listOfPosts = {
+      'Painterspost1': post1,
+      'Painterspost2': post2,
+      'Painterspost3': post3,
+      'Painterspost4': post4,
+      'Painterspost5': post5,
+      'Painterspost6': post6,
+      'Painterspost7': post7,
+      'Painterspost8': post8,
+      'Photographerspost1': post9,
+      'Photographerspost2': post10,
+      'Photographerspost3': post11,
+      'Photographerspost4': post12,
+      'Photographerspost5': post13,
+      'Photographerspost6': post14,
+      'Photographerspost7': post15,
+      'Photographerspost8': post16,
+
     };
     // for creating the feed
     int itemCountLimit = 8;
@@ -34,8 +40,8 @@ class SubCategoryPage extends StatelessWidget {
       {
         if (n > itemCountLimit) break;
       } // Stop adding items once the limit is reached
-      String postKey1 = "post$n";
-      String postKey2 = "post$j";
+      String postKey1 = "${pagetitle}post$n";
+      String postKey2 = "${pagetitle}post$j";
       feedPosts.add(Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -44,13 +50,13 @@ class SubCategoryPage extends StatelessWidget {
               username: artist1.username,
               imagePath: "assets/${pagetitle}post$n.jpeg",
               pfpPath: artist1.imagePath,
-              post: listOfPaintersPosts[postKey1]!),
+              post: listOfPosts[postKey1]!),
           FeedPost(
-            artist: artist2,
+            artist: artist3,
             username: artist2.username,
             imagePath: "assets/${pagetitle}post$j.jpeg",
             pfpPath: artist2.imagePath,
-            post: listOfPaintersPosts[postKey2]!,
+            post: listOfPosts[postKey2]!,
           )
         ],
       ));
