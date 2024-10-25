@@ -161,7 +161,7 @@ class MainPage extends StatelessWidget {
   Widget buildProfileImage() => CircleAvatar(
         radius: profileHeight / 2,
         backgroundColor: Colors.grey.shade800,
-        backgroundImage: AssetImage("assets/WhatsApp.jpg"),
+        backgroundImage: AssetImage("assets/MayaPFP.jpg"),
       );
 
   Widget buildPosts() {

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import 'widgets/sub_category_card.dart';
@@ -62,11 +61,11 @@ class MainApp extends StatelessWidget {
                 ),
                 SubCategoryCard(
                   firstTitle: "PAINTERS",
-                  firstimagePath: 'assets/painters.jpeg',
+                  firstimagePath: 'assets/home_images/painters.jpg',
                   secondTitle: "GRAPHIC DESIGNERS",
-                  secondImagePath: 'assets/graphicDesign.jpeg',
+                  secondImagePath: 'assets/home_images/GraphicDesigner.jpg',
                   thirdTitle: "PHOTOGRAPAHER",
-                  thirdImagePath: "assets/photography.jpeg",
+                  thirdImagePath: "assets/home_images/photographer.jpg",
                 ),
                 Text(
                   "Performing Arts",
@@ -74,11 +73,11 @@ class MainApp extends StatelessWidget {
                 ),
                 SubCategoryCard(
                   firstTitle: "Singers",
-                  firstimagePath: 'assets/Singers.jpeg',
+                  firstimagePath: 'assets/home_images/Singer.jpg',
                   secondTitle: "Dancers",
-                  secondImagePath: 'assets/Dancers.jpeg',
+                  secondImagePath: 'assets/home_images/Dancers.jpg',
                   thirdTitle: "Musicians",
-                  thirdImagePath: "assets/Musicians.jpeg",
+                  thirdImagePath: "assets/home_images/Musician.jpg",
                 ),
                 Text(
                   "Crafts Arts",
@@ -86,11 +85,11 @@ class MainApp extends StatelessWidget {
                 ),
                 SubCategoryCard(
                   firstTitle: "Ceramicists",
-                  firstimagePath: 'assets/Ceramics.jpg',
+                  firstimagePath: 'assets/home_images/Carvers.jpg',
                   secondTitle: "Jewelry Designers",
-                  secondImagePath: 'assets/JewelryDesign.jpg',
-                  thirdTitle: "Wood Carving",
-                  thirdImagePath: "assets/WoodCarving.jpg",
+                  secondImagePath: 'assets/home_images/JewelryDesigner.jpg',
+                  thirdTitle: "Carvers",
+                  thirdImagePath: "assets/home_images/Carvers.jpg",
                 ),
               ],
             ),
