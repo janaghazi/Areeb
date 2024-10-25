@@ -1,11 +1,11 @@
 class Artist {
-  final String username;
+  String username;
   final String password;
   final String imagePath;
   final int followersCount;
-  final String bio;
+  String bio;
   final String location;
-  final String displayName;
+  String displayName;
   Artist(
       {required this.username,
       required this.password,
