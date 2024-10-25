@@ -1,4 +1,4 @@
-import 'package:areeb/home.dart';
+import 'package:areeb/homePage.dart';
 import 'package:areeb/classes/list.dart';
 import 'package:flutter/material.dart';
 import 'classes/Artist.dart';

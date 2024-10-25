@@ -1,9 +1,9 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'Artist.dart';
+import 'classes/Artist.dart';
+import 'classes/list.dart';
 import 'editProfile.dart';
-import 'list.dart';
 
 void main() {
   runApp(ProfilePage());
@@ -16,7 +16,9 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MainPage(artist: artist2,),
+      home: MainPage(
+        artist: artist2,
+      ),
     );
   }
 }
@@ -31,8 +33,7 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:
-          Color.fromRGBO(251, 246, 242, 1.000), // background color
+      backgroundColor: Color.fromRGBO(251, 246, 242, 1.000), // background color
       body: SingleChildScrollView(
         child: Column(
           children: [

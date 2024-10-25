@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home.dart';
+import 'homePage.dart';
 import 'postDetails.dart';
 import 'entry.dart';
 import 'classes/Artist.dart';
