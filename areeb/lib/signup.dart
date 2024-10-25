@@ -19,7 +19,7 @@ class _SignupPageState extends State<SignupPage> {
         child: Container(
           padding: const EdgeInsets.all(20),
           decoration: const BoxDecoration(
-            color: Color(0xFFFBF6F2), // Background color changed to #fbf6f2
+            color: Color(0xFFFBF6F2), 
           ),
           child: Center(
             child: Column(

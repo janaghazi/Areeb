@@ -1,7 +1,11 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
-import 'classes/post.dart';
 import 'classes/list.dart';
+import 'classes/post.dart';
 import 'widgets/feedPost.dart';
+
+
 
 class SubCategoryPage extends StatelessWidget {
   SubCategoryPage({super.key, required this.pagetitle});

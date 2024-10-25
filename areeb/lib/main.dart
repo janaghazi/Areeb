@@ -31,7 +31,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       initialRoute: '/entry',
       routes: {
-        '/entry' : (context) => Entry(), 
+        '/entry' : (context) =>  Entry(), 
         '/home': (context) => MainApp(),
         '/login': (context) => LoginPage(),
       },

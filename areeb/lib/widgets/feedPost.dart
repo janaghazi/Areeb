@@ -1,9 +1,9 @@
 
-import '/postDetails.dart';
 import 'package:flutter/material.dart';
 
 import '../classes/Artist.dart';
 import '../classes/post.dart';
+import '../postDetails.dart';
 
 class FeedPost extends StatelessWidget {
   final Post post;

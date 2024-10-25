@@ -1,8 +1,7 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:areeb/widgets/SubCategoryCard.dart';
 import 'package:flutter/material.dart';
 
+import 'widgets/sub_category_card.dart';
 
 class MainApp extends StatelessWidget {
   MainApp({super.key});

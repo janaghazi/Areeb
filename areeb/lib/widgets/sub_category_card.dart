@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../sub_category_page.dart';
 
-
 class SubCategoryCard extends StatelessWidget {
   final String firstTitle;
   final String secondTitle;

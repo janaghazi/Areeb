@@ -1,6 +1,6 @@
+import 'package:areeb/classes/Artist.dart';
 import 'package:flutter/material.dart';
 
-import 'classes/Artist.dart';
 import 'classes/post.dart';
 
 class PostScreen extends StatelessWidget {
@@ -37,7 +37,7 @@ class PostScreen extends StatelessWidget {
                     ),
                     const SizedBox(width: 10),
                     Text(
-                      post.artist,
+                      post.display,
                       style: const TextStyle(
                           fontSize: 16, fontWeight: FontWeight.bold),
                     ),
@@ -93,12 +93,12 @@ class PostScreen extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      post.artist,
+                      "@${post.artist}",
                       style: TextStyle(fontSize: 14, color: Colors.grey),
                     ),
                     SizedBox(width: 10),
                     Text(
-                      post.dateCreated.toString(),
+                      "${post.dateCreated.day.toString()}-${post.dateCreated.month.toString()}-${post.dateCreated.year.toString()}",
                       style: TextStyle(fontSize: 14, color: Colors.grey),
                     ),
                   ],
@@ -143,159 +143,3 @@ class PostScreen extends StatelessWidget {
         ));
   }
 }
-
-// import 'package:flutter/material.dart';
-
-
-// class PostScreen extends StatelessWidget {
-//   const PostScreen({super.key, });
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: const Text("Post"),
-//         backgroundColor: const Color.fromARGB(255, 141, 180, 121),
-//         centerTitle: true,
-//         leading: IconButton(
-//         onPressed:() {},
-//         icon: const Icon(
-//          Icons.arrow_back,
-    
-//         )),
-//       ),
-      
-//       body: SingleChildScrollView(
-//         child: Padding(
-//         padding: const EdgeInsets.all(16.0),
-//         child: Column(
-//           crossAxisAlignment: CrossAxisAlignment.start,
-//           children: [
-
-//             const Row(
-//               children: [
-//                  CircleAvatar(
-//                   radius: 24,
-//                   backgroundColor: Color.fromARGB(255, 67, 67, 67),
-//                   child: Icon(Icons.person, color: Colors.white),
-//                 ),
-                
-                
-//                 SizedBox(width: 10),
-//                 Text(
-//                   "@renadd098",
-//                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-//                 ),
-//               ],
-//             ),
-//             const SizedBox(height: 20),
-
-//             Container(
-//               width: double.infinity,
-//               height: 300,
-//               color: Colors.grey[300],
-//               child: Icon(Icons.image, size: 100, color: Colors.grey[600]),
-//             ),
-//             const SizedBox(height: 20),
-
-//            const Text(
-//                   "Category",
-//                   style: TextStyle(fontSize: 14, color: Color.fromARGB(255, 141, 180, 121), fontWeight: FontWeight.bold),
-//                 ),
-//             Row(
-//               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//               children: [
-//                 const Text(
-//                   "Post Title",
-//                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold,),
-//                 ),
-//                 const SizedBox(width: 130),
-
-//                  //like
-//                  const CircleAvatar(
-//                   radius: 20,
-//                   backgroundColor: Color.fromARGB(255, 141, 180, 121),
-//                   child: Icon(Icons.thumb_up, color: Colors.white),
-//                 ),
-                
-                
-//                 ElevatedButton(
-//                   onPressed: () {},
-//                   style: ElevatedButton.styleFrom(
-//                     padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
-//                   ),
-//                   child: const Text("Lest Collab!"),
-//                 ),
-
-               
-//               ],
-//             ),
-            
-            
-//             const Row(
-//               children: [
-//                 Text(
-//                   "Author",
-//                   style: TextStyle(fontSize: 14, color: Colors.grey),
-//                 ),
-//                 SizedBox(width: 10),
-//                 Text(
-//                   "a min ago",
-//                   style: TextStyle(fontSize: 14, color: Colors.grey),
-//                 ),
-//               ],
-//             ),
-//             const SizedBox(height: 10),
-
-
-
-          
-        
-//             const Text(
-//               "In this piece, I wanted to capture the serenity of a desert sunset. The warm hues of orange and pink blend into the soft sands, while the shadows of distant dunes create a sense of depth and mystery",
-//               style: TextStyle(fontSize: 14),
-//             ),
-//             const SizedBox(height: 30),
-
-        
-
-//             const Text(
-//               "Comments",
-//               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold), 
-//             ),
-//             const SizedBox(height: 10),
-
-//             Row(
-//               children: [
-//                 Expanded(
-//                   child: TextField(
-//                     decoration: InputDecoration(
-//                       hintText: "Your Comment...",
-//                       border: OutlineInputBorder(
-//                         borderRadius: BorderRadius.circular(10),
-//                       ),
-//                     ),
-//                   ),
-//                 ),
-//                 const SizedBox( width: 10),
-
-//                 ElevatedButton(
-//                   onPressed: () {},
-//                   style: ElevatedButton.styleFrom(
-//                     padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-//                   ),
-//                   child: const Text("Comment"),
-//                 ),
-//               ],
-//             ),
-//           ],
-//         ),
-//       ),
-      
-//       )
-      
-//     );
-//   }
-// }
-
-

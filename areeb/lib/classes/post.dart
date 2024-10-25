@@ -5,7 +5,8 @@ class Post {
   final String description;
   final String subCategory;
   final String imagePath;
-  Post(this.dateCreated, this.imagePath,
+  final String display;
+  Post(this.dateCreated, this.imagePath, this.display,
       {required this.title,
       required this.artist,
       required this.description,

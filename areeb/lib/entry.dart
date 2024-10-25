@@ -44,28 +44,7 @@ class _EntryState extends State<Entry> {
           image: AssetImage("assets/areeb.png")
           ),
         
-
-              // CircleAvatar(
-              //     radius: 24,
-              //     backgroundColor: Color.fromARGB(255, 67, 67, 67),
-              //     child: Icon(Icons.person, color: Colors.white),
-              //   ),
-                
-                
-              //   SizedBox(width: 10),
-              //   Text(
-              //     "@renadd098",
-              //     style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              //   ),
-              
-            
-            // Image.asset(
-            //       "assets/AreebLogo.jpg",
-            //       fit: BoxFit.contain,
-            //       height: 50,
-            //     ),
-          
-        ),
+      ),
       );
     
   }

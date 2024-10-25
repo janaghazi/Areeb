@@ -30,7 +30,7 @@ class _LoginPageState extends State<LoginPage> {
         child: Container(
           padding: const EdgeInsets.all(20),
           decoration: const BoxDecoration(
-            color: Color(0xFFFBF6F2), // Background color changed to #fbf6f2
+            color: Color(0xFFFBF6F2), //  #fbf6f2
           ),
           child: Center(
             child: Column(
@@ -105,9 +105,7 @@ class _LoginPageState extends State<LoginPage> {
                         MaterialPageRoute(builder: (context) => MainApp()),
                       );
                       // او اي شي ابغاه يسويه ، زي .. يودينا الهوم او شي
-                    } else {
-                      // print("username or password is wrong");
-                    }
+                    } 
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color.fromARGB(255, 141, 180, 121),
