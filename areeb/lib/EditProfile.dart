@@ -4,7 +4,7 @@ import 'package:areeb/classes/list.dart';
 import 'package:flutter/material.dart';
 
 import 'classes/Artist.dart';
-import 'widgets/Profile1.dart';
+import 'Profile1.dart';
 
 class EditProfile extends StatefulWidget {
   @override

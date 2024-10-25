@@ -1,13 +1,8 @@
-// ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
 import 'classes/Artist.dart';
 import 'classes/list.dart';
 import 'editProfile.dart';
-
-void main() {
-  runApp(ProfilePage());
-}
 
 class ProfilePage extends StatelessWidget {
   // const ProfilePage({super.key, required this.artist});
