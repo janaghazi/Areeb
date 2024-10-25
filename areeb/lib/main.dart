@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'homePage.dart';
-import 'postDetails.dart';
 import 'entry.dart';
-import 'classes/Artist.dart';
 import 'login.dart';
 
 

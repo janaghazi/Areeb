@@ -35,7 +35,7 @@ class MainApp extends StatelessWidget {
                   child: ClipOval(
                     child: SizedBox.fromSize(
                       size: Size.fromRadius(25), // Image radius
-                      child: Image.asset('assets/pfp.jpeg', fit: BoxFit.cover),
+                      child: Image.asset('assets/MayaPFP.jpg', fit: BoxFit.cover),
                     ),
                   ),
                 )
@@ -60,11 +60,11 @@ class MainApp extends StatelessWidget {
                   style: heading,
                 ),
                 SubCategoryCard(
-                  firstTitle: "PAINTERS",
+                  firstTitle: "Painters",
                   firstimagePath: 'assets/home_images/painters.jpg',
-                  secondTitle: "GRAPHIC DESIGNERS",
+                  secondTitle: "Graphic Designers",
                   secondImagePath: 'assets/home_images/GraphicDesigner.jpg',
-                  thirdTitle: "PHOTOGRAPAHER",
+                  thirdTitle: "Photographers",
                   thirdImagePath: "assets/home_images/photographer.jpg",
                 ),
                 Text(
@@ -85,7 +85,7 @@ class MainApp extends StatelessWidget {
                 ),
                 SubCategoryCard(
                   firstTitle: "Ceramicists",
-                  firstimagePath: 'assets/home_images/Carvers.jpg',
+                  firstimagePath: 'assets/home_images/Ceramicists.jpg',
                   secondTitle: "Jewelry Designers",
                   secondImagePath: 'assets/home_images/JewelryDesigner.jpg',
                   thirdTitle: "Carvers",
