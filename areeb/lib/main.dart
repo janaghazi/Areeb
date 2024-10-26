@@ -17,6 +17,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   int myIndex = 0;
+  // list for nav bar pages, will be added once those pages are implemented
   List<Widget> screenList = [
     MainApp(), // home, 0
     // ProfilePage(), // maya, 1

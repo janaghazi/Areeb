@@ -27,7 +27,6 @@ class SubCategoryPage extends StatelessWidget {
       'Photographerspost6': post14,
       'Photographerspost7': post15,
       'Photographerspost8': post16,
-
     };
     // for creating the feed
     int itemCountLimit = 8;
@@ -46,14 +45,16 @@ class SubCategoryPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           FeedPost(
-              artist: artist1,
-              username: artist1.username,
+              // artist: artist1,
+              // username: artist1.username,
+              artist: listOfPosts[postKey2]!.artist,
               imagePath: "assets/${pagetitle}post$n.jpeg",
               pfpPath: artist1.imagePath,
               post: listOfPosts[postKey1]!),
           FeedPost(
-            artist: artist3,
-            username: artist2.username,
+            // artist: artist3,
+            artist: listOfPosts[postKey2]!.artist,
+            // username: artist2.username,
             imagePath: "assets/${pagetitle}post$j.jpeg",
             pfpPath: artist2.imagePath,
             post: listOfPosts[postKey2]!,

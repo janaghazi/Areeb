@@ -1,7 +1,9 @@
+import 'Artist.dart';
+
 class Post {
   final DateTime dateCreated;
   final String title;
-  final String artist;
+  final Artist artist;
   final String description;
   final String subCategory;
   final String imagePath;

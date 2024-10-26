@@ -1,3 +1,5 @@
+import 'package:areeb/Profile1.dart';
+import 'package:areeb/classes/list.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets/sub_category_card.dart';
@@ -35,7 +37,18 @@ class MainApp extends StatelessWidget {
                   child: ClipOval(
                     child: SizedBox.fromSize(
                       size: Size.fromRadius(25), // Image radius
-                      child: Image.asset('assets/MayaPFP.jpg', fit: BoxFit.cover),
+                      child: InkWell(
+                        child: Image.asset('assets/MayaPFP.jpg',
+                            fit: BoxFit.cover),
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => MainPage(
+                                        artist: artist1,
+                                      )));
+                        },
+                      ),
                     ),
                   ),
                 )
@@ -62,7 +75,7 @@ class MainApp extends StatelessWidget {
                 SubCategoryCard(
                   firstTitle: "Painters",
                   firstimagePath: 'assets/home_images/painters.jpg',
-                  secondTitle: "Graphic Designers",
+                  secondTitle: "GraphicDesigners",
                   secondImagePath: 'assets/home_images/GrapgicDesigner.jpg',
                   thirdTitle: "Photographers",
                   thirdImagePath: "assets/home_images/photographer.jpg",
@@ -75,7 +88,7 @@ class MainApp extends StatelessWidget {
                   firstTitle: "Singers",
                   firstimagePath: 'assets/home_images/Singer.jpg',
                   secondTitle: "Dancers",
-                  secondImagePath: 'assets/home_images/Ceramicist.jpg',
+                  secondImagePath: 'assets/home_images/Dancers.jpg',
                   thirdTitle: "Musicians",
                   thirdImagePath: "assets/home_images/Musician.jpg",
                 ),

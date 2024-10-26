@@ -8,14 +8,14 @@ import '../postDetails.dart';
 class FeedPost extends StatelessWidget {
   final Post post;
   final Artist artist;
-  final String username;
+  // final String username;
   final String imagePath;
   final String pfpPath;
   const FeedPost({
     super.key,
     required this.post,
     required this.artist,
-    required this.username,
+    // required this.username,
     required this.imagePath,
     required this.pfpPath,
   });
