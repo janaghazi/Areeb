@@ -24,7 +24,7 @@ Artist artist2 = Artist(
 Artist artist3 = Artist(
     username: "reno00",
     password: "renadrenad",
-    imagePath: "assets/pfp.jpeg",
+    imagePath: "assets/renadPFP.jpeg",
     followersCount: 223,
     bio: "painting is life",
     location: "jeddah",
