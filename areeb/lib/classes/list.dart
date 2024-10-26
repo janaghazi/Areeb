@@ -1,8 +1,7 @@
 import 'package:areeb/classes/Artist.dart';
 import 'package:areeb/classes/post.dart';
 
-
-// artists 
+// artists
 Artist artist1 = Artist(
     username: "jano28",
     password: "janajana",
@@ -17,7 +16,7 @@ Artist artist2 = Artist(
     password: "mayamaya",
     imagePath: "assets/MayaPFP.jpg",
     followersCount: 223,
-    bio: "your friendly neighbourhood sirem",
+    bio: "your friendly neighbourhood siren",
     location: "makkah",
     displayName: "mayaa");
 
@@ -30,16 +29,14 @@ Artist artist3 = Artist(
     location: "jeddah",
     displayName: "reno");
 
-
-
-// visual arts 
+// visual arts
 // painters post OLD
 Post post1 = Post(
   DateTime(2024, 8, 28),
   "assets/PaintersPost1.jpeg",
   artist1.displayName,
   title: "sea",
-  artist: artist1.username,
+  artist: artist1,
   description: "in this paint i wanted to resemble the sea as much as i could",
   subCategory: "painters",
 );
@@ -49,16 +46,15 @@ Post post2 = Post(
   "assets/PaintersPost2.jpeg",
   artist2.displayName,
   title: "my studio",
-  artist: artist2.username,
-  description:
-      "the place where all the artistry came from <3",
+  artist: artist2,
+  description: "the place where all the artistry came from <3",
   subCategory: "painters",
 );
 
 Post post3 = Post(
-    DateTime(2024, 8, 28), "assets/PaintersPost3.jpeg", artist1.displayName,
+    DateTime(2024, 8, 28), "assets/PaintersPost3.jpeg", artist3.displayName,
     title: "Mountain Landscape",
-    artist: artist1.username,
+    artist: artist3,
     description:
         "a paint the captures Serene mountain landscape with a winding river and vibrant wildflowers.",
     subCategory: "painters");
@@ -66,9 +62,9 @@ Post post3 = Post(
 Post post4 = Post(
   DateTime(2024, 8, 28),
   "assets/PaintersPost4.jpeg",
-  artist2.displayName,
+  artist1.displayName,
   title: "Artist's Haven",
-  artist: artist2.username,
+  artist: artist1,
   description: "the inspiring and productive environment of an artist at work.",
   subCategory: "painters",
 );
@@ -76,20 +72,22 @@ Post post4 = Post(
 Post post5 = Post(
   DateTime(2024, 8, 28),
   "assets/PaintersPost5.jpeg",
-  artist1.displayName,
+  artist2.displayName,
   title: "Majestic Mountain Sunset",
-  artist: artist1.username,
-  description: "this painting captures a breathtaking view of a mountainous region at sunset",
+  artist: artist2,
+  description:
+      "this painting captures a breathtaking view of a mountainous region at sunset",
   subCategory: "painters",
 );
 
 Post post6 = Post(
   DateTime(2024, 8, 28),
   "assets/PaintersPost6.jpeg",
-  artist2.displayName,
+  artist3.displayName,
   title: "after artblock",
-  artist: artist2.username,
-  description: "going back to my studio after my art block phase, ik it's a little messy.",
+  artist: artist3,
+  description:
+      "going back to my studio after my art block phase, ik it's a little messy.",
   subCategory: "painters",
 );
 
@@ -98,7 +96,7 @@ Post post7 = Post(
   "assets/PaintersPost7.jpeg",
   artist1.displayName,
   title: "forest tranquility",
-  artist: artist1.username,
+  artist: artist1,
   description: "capturing the peaceful essence of a forest",
   subCategory: "painters",
 );
@@ -108,13 +106,10 @@ Post post8 = Post(
   "assets/PaintersPost8.jpeg",
   artist2.displayName,
   title: "Istanbul landscape",
-  artist: artist2.username,
+  artist: artist2,
   description: "a canvas the captures the nature of Istanbul.",
   subCategory: "painters",
 );
-
-
-
 
 // photography posts
 Post post9 = Post(
@@ -122,7 +117,7 @@ Post post9 = Post(
   "assets/Photographerspost1.jpeg",
   artist3.displayName,
   title: "Rooftop",
-  artist: artist3.username,
+  artist: artist3,
   description: "this is what i imagine adonis's rooftop to look like",
   subCategory: "Photographers",
 );
@@ -132,15 +127,15 @@ Post post10 = Post(
   "assets/Photographerspost2.jpeg",
   artist2.displayName,
   title: "Wallflower",
-  artist: artist2.username,
+  artist: artist2,
   description: "bury me in the trees, the flowers",
   subCategory: "Photographers",
 );
 
 Post post11 = Post(DateTime(2024, 10, 10), "assets/Photographerspost3.jpeg",
-    artist1.displayName,
+    artist2.displayName,
     title: "lookalike",
-    artist: artist1.username,
+    artist: artist2,
     description: "Graceful silhouettes entwined in harmony",
     subCategory: "Photographers");
 
@@ -149,7 +144,7 @@ Post post12 = Post(
   "assets/Photographerspost4.jpeg",
   artist3.displayName,
   title: "Lost in contemplation",
-  artist: artist3.username,
+  artist: artist3,
   description: "poised upon a stone, gazes into the vast expanse of the abyss",
   subCategory: "Photographers",
 );
@@ -157,9 +152,9 @@ Post post12 = Post(
 Post post13 = Post(
   DateTime(2023, 2, 19),
   "assets/Photographerspost5.jpeg",
-  artist2.displayName,
+  artist3.displayName,
   title: "Night's Embrace",
-  artist: artist2.username,
+  artist: artist3,
   description: "Whispers of moonlight in her hands",
   subCategory: "Photographers",
 );
@@ -169,7 +164,7 @@ Post post14 = Post(
   "assets/Photographerspost6.jpeg",
   artist1.displayName,
   title: "Silent Reverie",
-  artist: artist1.username,
+  artist: artist1,
   description: "Amidst the veils of fog",
   subCategory: "Photographers",
 );
@@ -179,7 +174,7 @@ Post post15 = Post(
   "assets/Photographerspost7.jpeg",
   artist3.displayName,
   title: "Street Symphony",
-  artist: artist3.username,
+  artist: artist3,
   description: "each step a portrait of resilience and determination",
   subCategory: "Photographers",
 );
@@ -189,100 +184,94 @@ Post post16 = Post(
   "assets/Photographerspost8.jpeg",
   artist2.displayName,
   title: "Women of Stone",
-  artist: artist2.username,
+  artist: artist2,
   description:
       "Women, like pillars of strength, uphold the ancient echoes of Greek architecture",
   subCategory: "Photographers",
 );
 
-
 //GraphicDesignrs Post
 Post post17 = Post(
   DateTime(2024, 8, 28),
-  "assets/Graphicdesignrspost1.jpeg",
-  artist2.displayName,
+  "assets/Graphicdesignerspost1.jpeg",
+  artist1.displayName,
   title: "Splend Haircare Brand",
-  artist: artist2.username,
+  artist: artist1,
   description:
       "vibrant and playful packaging design of the Splend haircare brand",
-  subCategory: "Graphicdesignrs",
+  subCategory: "GraphicDesigners",
 );
 
 Post post18 = Post(
   DateTime(2024, 8, 28),
-  "assets/Graphicdesignrspost2.jpeg",
+  "assets/Graphicdesignerspost2.jpeg",
   artist2.displayName,
   title: "Dairy Brand",
-  artist: artist2.username,
+  artist: artist2,
   description:
       "packaging design of the dairy brand, featuring a cat character and bold blue color",
-  subCategory: "Graphicdesignrs",
+  subCategory: "GraphicDesigners",
 );
 
 Post post19 = Post(
   DateTime(2024, 8, 28),
-  "assets/Graphicdesignrspost3.jpeg",
+  "assets/Graphicdesignerspost3.jpeg",
   artist2.displayName,
   title: "Gooeters Packaging Design",
-  artist: artist2.username,
+  artist: artist2,
   description:
       "design for cake packaging featuring a simple yet expressive logo and playful duck characters",
-  subCategory: "Graphicdesignrs",
+  subCategory: "GraphicDesigners",
 );
 
 Post post20 = Post(
   DateTime(2024, 8, 28),
-  "assets/Graphicdesignrspost4.jpeg",
+  "assets/Graphicdesignerspost4.jpeg",
   artist2.displayName,
   title: "Jack's Burger",
-  artist: artist2.username,
-  description:
-      "my design for the jack's burger, hope u like it.",
-  subCategory: "Graphicdesignrs",
+  artist: artist2,
+  description: "my design for the jack's burger, hope u like it.",
+  subCategory: "GraphicDesigners",
 );
 
 Post post21 = Post(
   DateTime(2024, 8, 28),
-  "assets/Graphicdesignrspost5.jpeg",
+  "assets/Graphicdesignerspost5.jpeg",
   artist2.displayName,
   title: "Cookie Dough Packaging",
-  artist: artist2.username,
-  description:
-      "playful packaging design for the Wonderio cookie dough product",
-  subCategory: "Graphicdesignrs",
+  artist: artist2,
+  description: "playful packaging design for the Wonderio cookie dough product",
+  subCategory: "GraphicDesigners",
 );
 
 Post post22 = Post(
   DateTime(2024, 8, 28),
-  "assets/Graphicdesignrspost6.jpeg",
+  "assets/Graphicdesignerspost6.jpeg",
   artist2.displayName,
   title: "Popoke",
-  artist: artist2.username,
-  description:
-      "New visual identity for popoke restraint that i made.",
-  subCategory: "Graphicdesignrs",
+  artist: artist2,
+  description: "New visual identity for popoke restraint that i made.",
+  subCategory: "GraphicDesigners",
 );
 
 Post post23 = Post(
   DateTime(2024, 8, 28),
-  "assets/Graphicdesignrspost7.jpeg",
-  artist2.displayName,
+  "assets/Graphicdesignerspost7.jpeg",
+  artist1.displayName,
   title: "Milky Organic Packaging",
-  artist: artist2.username,
+  artist: artist1,
   description:
       "whimsical packaging design for the Milky Organic dairy brand, featuring a fun and eye-catching ",
-  subCategory: "Graphicdesignrs",
+  subCategory: "GraphicDesigners",
 );
 
 Post post24 = Post(
   DateTime(2024, 8, 28),
-  "assets/Graphicdesignrspost8.jpeg",
+  "assets/Graphicdesignerspost8.jpeg",
   artist2.displayName,
   title: "Theshear Coffee Shop",
-  artist: artist2.username,
+  artist: artist2,
   description:
       "cohesive and visually striking branding design, featuring a minimalist yet playful aesthetic with a bold logo, illustrated icons, and consistent packaging elements",
-  subCategory: "Graphicdesignrs",
+  subCategory: "GraphicDesigners",
 );
-
-

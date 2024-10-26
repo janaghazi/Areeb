@@ -114,9 +114,9 @@ class _SignupPageState extends State<SignupPage> {
                       style: TextStyle(fontSize: 18, color: Colors.white)),
                 ),
                 const Image(
-                  image: AssetImage("lib/AreebLogo.png"),
-                  width: 300,
-                  height: 300,
+                  image: AssetImage("assets/areeb.png"),
+                  width: 100,
+                  height: 100,
                 ),
               ],
             ),

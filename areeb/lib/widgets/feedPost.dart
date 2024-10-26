@@ -10,14 +10,14 @@ class FeedPost extends StatelessWidget {
   final Artist artist;
   // final String username;
   final String imagePath;
-  final String pfpPath;
+  // final String pfpPath;
   const FeedPost({
     super.key,
     required this.post,
     required this.artist,
     // required this.username,
     required this.imagePath,
-    required this.pfpPath,
+    // required this.pfpPath,
   });
 
   @override
@@ -43,7 +43,7 @@ class FeedPost extends StatelessWidget {
                   ClipOval(
                     child: SizedBox.fromSize(
                       size: const Size.fromRadius(10),
-                      child: Image.asset(pfpPath, fit: BoxFit.cover),
+                      child: Image.asset(artist.imagePath, fit: BoxFit.cover),
                     ),
                   ),
                   const SizedBox(
@@ -61,7 +61,7 @@ class FeedPost extends StatelessWidget {
             MaterialPageRoute(
                 builder: (context) => PostScreen(
                       post: post,
-                      artist: artist,
+                      // artist: artist,
                     )),
           );
         },

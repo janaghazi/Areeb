@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 import 'classes/post.dart';
 
 class PostScreen extends StatelessWidget {
-  final Artist artist;
+  // final Artist artist;
   final Post post;
   const PostScreen({
     super.key,
-    required this.artist,
+    // required this.artist,
     required this.post,
   });
 
@@ -33,7 +33,7 @@ class PostScreen extends StatelessWidget {
                       child: SizedBox.fromSize(
                           size: const Size.fromRadius(20),
                           child:
-                              Image.asset(artist.imagePath, fit: BoxFit.cover)),
+                              Image.asset(post.artist.imagePath, fit: BoxFit.cover)),
                     ),
                     const SizedBox(width: 10),
                     Text(
@@ -93,7 +93,7 @@ class PostScreen extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      "@${post.artist}",
+                      "@${post.artist.username}",
                       style: TextStyle(fontSize: 14, color: Colors.grey),
                     ),
                     SizedBox(width: 10),
