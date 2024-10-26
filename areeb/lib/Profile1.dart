@@ -1,18 +1,24 @@
+// ignore_for_file: prefer_const_constructors
+
+import 'package:areeb/classes/Artist.dart';
+import 'package:areeb/classes/list.dart';
 import 'package:flutter/material.dart';
-import 'classes/Artist.dart';
-import 'classes/list.dart';
+// import 'Artist.dart';
 import 'editProfile.dart';
+// import 'list.dart';
 
-class ProfilePage extends StatelessWidget {
-  final Artist artist;
+// void main() {
+//   runApp(const MyApp());
+// }
 
-  const ProfilePage({super.key, required this.artist});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MainPage(),
+      home: MainPage(artist2),
     );
   }
 }
@@ -20,13 +26,17 @@ class ProfilePage extends StatelessWidget {
 class MainPage extends StatelessWidget {
   final double coverHeight = 200;
   final double profileHeight = 144;
+  final Artist artist;
 
-  const MainPage({super.key});
+  MainPage(
+    this.artist,
+  );
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(212, 186, 164, 1), // background color
+      backgroundColor:
+          Color.fromRGBO(251, 246, 242, 1.000), // Light green background color
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -51,7 +61,7 @@ class MainPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  artist1.displayName,
+                  artist.displayName,
                   style: TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.bold,
@@ -60,7 +70,7 @@ class MainPage extends StatelessWidget {
                 ),
                 SizedBox(height: 2.0),
                 Text(
-                  "@${artist1.username}",
+                  "@${artist.username}",
                   style: TextStyle(
                     color: Colors.grey,
                     fontSize: 11.0,
@@ -68,7 +78,7 @@ class MainPage extends StatelessWidget {
                 ),
                 SizedBox(height: 8.0),
                 Text(
-                  artist1.bio,
+                  artist.bio,
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 16.0,
@@ -128,7 +138,6 @@ class MainPage extends StatelessWidget {
   Widget buildTop() {
     final bottom = profileHeight / 2;
     final top = coverHeight - profileHeight / 2;
-
     return Stack(
       clipBehavior: Clip.none,
       alignment: Alignment.center,
@@ -159,13 +168,16 @@ class MainPage extends StatelessWidget {
   Widget buildProfileImage() => CircleAvatar(
         radius: profileHeight / 2,
         backgroundColor: Colors.grey.shade800,
-        backgroundImage: AssetImage("assets/MayaPFP.jpg"),
+        backgroundImage: AssetImage(artist.imagePath),
       );
 
   Widget buildPosts() {
     return GridView.builder(
+      shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 3,
+        childAspectRatio: 1,
       ),
       itemCount: 9,
       itemBuilder: (context, index) {

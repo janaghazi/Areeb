@@ -22,7 +22,7 @@ class _MyAppState extends State<MyApp> {
   // list for nav bar pages, will be added once those pages are implemented
   List<Widget> screenList = [
     MainApp(), // home, 0
-    MainPage(), // maya, 1
+    MainPage(artist1), // maya, 1
     // PostScreen(),// renad, 3
     // PostScreen(), // 4
     // PostScreen(), //5

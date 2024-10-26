@@ -44,8 +44,8 @@ class MainApp extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => EditProfile(
-                                      // artist: artist1,
+                                builder: (context) => MainPage(
+                                      artist1,
                                     )),
                           );
                         },

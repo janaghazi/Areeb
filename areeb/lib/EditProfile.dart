@@ -145,7 +145,7 @@ class _EditProfileState extends State<EditProfile> {
                     context,
                     MaterialPageRoute(
                         builder: (context) => MainPage(
-                              // artist: artist2,
+                              artist
                             )));
               },
               child: Text('Save Changes'),
