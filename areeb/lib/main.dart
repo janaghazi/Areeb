@@ -1,4 +1,6 @@
+import 'package:areeb/classes/list.dart';
 import 'package:flutter/material.dart';
+import 'Profile1.dart';
 import 'homePage.dart';
 import 'entry.dart';
 import 'login.dart';
@@ -20,7 +22,7 @@ class _MyAppState extends State<MyApp> {
   // list for nav bar pages, will be added once those pages are implemented
   List<Widget> screenList = [
     MainApp(), // home, 0
-    // ProfilePage(), // maya, 1
+    MainPage(), // maya, 1
     // PostScreen(),// renad, 3
     // PostScreen(), // 4
     // PostScreen(), //5

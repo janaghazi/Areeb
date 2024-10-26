@@ -2,6 +2,7 @@ import 'package:areeb/Profile1.dart';
 import 'package:areeb/classes/list.dart';
 import 'package:flutter/material.dart';
 
+import 'EditProfile.dart';
 import 'widgets/sub_category_card.dart';
 
 class MainApp extends StatelessWidget {
@@ -14,7 +15,6 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // darkTheme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Color.fromRGBO(251, 246, 242, 10),
@@ -42,11 +42,12 @@ class MainApp extends StatelessWidget {
                             fit: BoxFit.cover),
                         onTap: () {
                           Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => MainPage(
-                                        artist: artist1,
-                                      )));
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => EditProfile(
+                                      // artist: artist1,
+                                    )),
+                          );
                         },
                       ),
                     ),

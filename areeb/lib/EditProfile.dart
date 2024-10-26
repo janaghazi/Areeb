@@ -15,7 +15,6 @@ class _EditProfileState extends State<EditProfile> {
   final double coverHeight = 200;
   final double profileHeight = 144;
   final Artist artist;
-  // TextEditingController = (text: "@${artist.username}");
   TextEditingController nameController = TextEditingController();
   TextEditingController usernameController = TextEditingController();
   TextEditingController bioController = TextEditingController();
@@ -93,7 +92,7 @@ class _EditProfileState extends State<EditProfile> {
     return CircleAvatar(
       radius: profileHeight / 2,
       backgroundColor: Colors.grey.shade800,
-      backgroundImage: AssetImage("assets/WhatsApp.jpg"),
+      backgroundImage: AssetImage("assets/MayaPFP.jpg"),
     );
   }
 
@@ -146,7 +145,7 @@ class _EditProfileState extends State<EditProfile> {
                     context,
                     MaterialPageRoute(
                         builder: (context) => MainPage(
-                              artist: artist2,
+                              // artist: artist2,
                             )));
               },
               child: Text('Save Changes'),

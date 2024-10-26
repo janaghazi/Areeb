@@ -1,19 +1,18 @@
-
 import 'package:flutter/material.dart';
 import 'classes/Artist.dart';
 import 'classes/list.dart';
 import 'editProfile.dart';
 
 class ProfilePage extends StatelessWidget {
-  // const ProfilePage({super.key, required this.artist});
+  final Artist artist;
+
+  const ProfilePage({super.key, required this.artist});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MainPage(
-        artist: artist2,
-      ),
+      home: MainPage(),
     );
   }
 }
@@ -21,14 +20,13 @@ class ProfilePage extends StatelessWidget {
 class MainPage extends StatelessWidget {
   final double coverHeight = 200;
   final double profileHeight = 144;
-  final Artist artist;
 
-  const MainPage({super.key, required this.artist});
+  const MainPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(251, 246, 242, 1.000), // background color
+      backgroundColor: Color.fromRGBO(212, 186, 164, 1), // background color
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -53,7 +51,7 @@ class MainPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  artist.displayName,
+                  artist1.displayName,
                   style: TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.bold,
@@ -62,7 +60,7 @@ class MainPage extends StatelessWidget {
                 ),
                 SizedBox(height: 2.0),
                 Text(
-                  "@${artist.username}",
+                  "@${artist1.username}",
                   style: TextStyle(
                     color: Colors.grey,
                     fontSize: 11.0,
@@ -70,7 +68,7 @@ class MainPage extends StatelessWidget {
                 ),
                 SizedBox(height: 8.0),
                 Text(
-                  artist.bio,
+                  artist1.bio,
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 16.0,
