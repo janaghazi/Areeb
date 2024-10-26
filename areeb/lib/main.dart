@@ -1,10 +1,11 @@
 import 'package:areeb/classes/list.dart';
+import 'package:areeb/sub_category_page.dart';
+import 'package:areeb/widgets/sub_category_card.dart';
 import 'package:flutter/material.dart';
 import 'Profile1.dart';
 import 'homePage.dart';
 import 'entry.dart';
 import 'login.dart';
-
 
 void main() {
   runApp(const MyApp());
@@ -19,24 +20,26 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   int myIndex = 0;
-  // list for nav bar pages, will be added once those pages are implemented
   List<Widget> screenList = [
     MainApp(), // home, 0
-    MainPage(artist1), // maya, 1
-    // PostScreen(),// renad, 3
-    // PostScreen(), // 4
-    // PostScreen(), //5
+    // ProfilePage(), // maya, 1
+    // ProfilePage(), // maya, 1
+    // ProfilePage(), // maya, 1
+    MainPage(artist2), // maya, 1
   ];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/entry',
-      routes: {
-        '/entry' : (context) =>  Entry(), 
-        '/home': (context) => MainApp(),
-        '/login': (context) => LoginPage(),
-      },
+      // initialRoute: '/home',
+      // routes: {
+      //   '/home': (context) => MainApp(),
+      //   "/Profile": (context) => ProfilePage(),
+      //   "/EditProfile": (context) => EditProfilePage(),
+      //   "/Post": (context) => const PostScreen(),
+      //   //"/subcategory": (context) => const subCategory(),
+      // },
       debugShowCheckedModeBanner: false,
+      // home: const MainApp(),
       home: Scaffold(
         body: Center(
           child: screenList[myIndex],
